@@ -8,7 +8,11 @@
 <h1>
 	Hello world!  
 </h1>
-
+<ul>
+<c:forEach var="user" items="${list}">
+	<li>${user.user_id}</li>
+</c:forEach>
+</ul>
 <P>  The time on the server is ${serverTime}. </P>
 </body>
 </html>
